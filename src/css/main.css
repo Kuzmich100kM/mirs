@@ -1,12 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 html {
   font-size: 100%; }
-  @media only screen and (max-width: 1360px) {
-    html {
-      font-size: 80%; } }
-  @media only screen and (max-width: 600px) {
-    html {
-      font-size: 60%; } }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -132,6 +126,10 @@ html {
     width: 1130px;
     margin: 57px auto;
     border-top: 1px solid #8c8b8b; }
+  .block-list:last-child {
+    margin-bottom: calc(100vh - 375px); }
+    .block-list:last-child .block-list__devider {
+      border: 0; }
 
 .block {
   display: flex;
