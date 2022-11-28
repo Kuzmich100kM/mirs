@@ -13,6 +13,7 @@ const getLetters = () => {
   for (let i = 0; i < 26; i++) {
     charsArr.push(String.fromCharCode(65 + i))
   }
+  charsArr.push("0-9")
   return charsArr
 }
 
@@ -21,6 +22,7 @@ const App = () => {
 
   useEffect(() => {
     const lettersArray = getLetters()
+    console.log("lettersArray", lettersArray)
     dispatch(setLettersAC(lettersArray))
   }, [dispatch])
 
