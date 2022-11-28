@@ -1,11 +1,18 @@
 .navbar {
-    flex-grow: 1;
-    margin: 44px 115px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    margin: 0 105px;
+    background-color: $bg-color;
+    height: 125px;
+    z-index: 10;
 
     &__list {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        height: 100%;
+        padding-left: 19px;
+        gap: 8px;
     }
 
     &__letter {
@@ -15,7 +22,7 @@
         height: 40px;
         width: 24px;
         border-radius: 4px;
-        border: 1px solid #414755;
+        border: 1px solid $gray;
         text-align: center;
         cursor: pointer;
 

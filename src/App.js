@@ -1,13 +1,12 @@
 import React, { useEffect } from "react"
+import { useDispatch } from "react-redux"
+
+import { setLettersAC, setDataAC } from "./redux/reducers/content.reducer"
+import { getFakeData } from "./redux/fakeData"
 
 import Header from "@components/Header"
 import Navbar from "@components/Navbar"
 import Content from "@components/Content"
-import { useDispatch } from "react-redux"
-// import { useSelector } from "react-redux"
-import { setLettersAC } from "../src/reducers/content.reducer.js"
-import { getData } from "./reducers/data.js"
-import { setDataAC } from "./reducers/content.reducer"
 
 const getLetters = () => {
   const charsArr = []
@@ -19,17 +18,17 @@ const getLetters = () => {
 
 const App = () => {
   const dispatch = useDispatch()
-  // const isAuth = useSelector(state => state.auth.isAuth)
+
   useEffect(() => {
     const lettersArray = getLetters()
     dispatch(setLettersAC(lettersArray))
-  }, [])
+  }, [dispatch])
 
   useEffect(() => {
-    const dataArray = getData()
-    console.log("dataArray", dataArray)
+    const dataArray = getFakeData()
     dispatch(setDataAC(dataArray))
-  }, [])
+  }, [dispatch])
+
   return (
     <div className="app container">
       <Header />

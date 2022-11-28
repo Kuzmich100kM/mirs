@@ -22,8 +22,22 @@ const data = [
       { id: 8, name: "block 3" },
     ],
   },
+  {
+    letter: "5",
+    blocks: [
+      { id: 1, name: "block 1" },
+      { id: 2, name: "block 2" },
+    ],
+  },
+  {
+    letter: "Y",
+    blocks: [
+      { id: 1, name: "block 1" },
+      { id: 2, name: "block 2" },
+    ],
+  },
 ]
 
 module.exports = {
-  getData: () => data,
+  getFakeData: () => data,
 }

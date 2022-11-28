@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 html {
   font-size: 100%; }
-  @media only screen and (max-width: 1160px) {
+  @media only screen and (max-width: 1360px) {
     html {
       font-size: 80%; } }
   @media only screen and (max-width: 600px) {
@@ -14,6 +14,10 @@ body {
   line-height: 1.5;
   background-color: #202020;
   color: #fafafa; }
+
+h1 {
+  font-size: 36px;
+  font-weight: 500; }
 
 * {
   padding: 0;
@@ -57,14 +61,10 @@ ul li {
 html {
   height: 100%; }
 
-hr {
-  border: none;
-  color: #414755;
-  height: 1px; }
-
 .container {
   background-color: #212538;
-  max-width: 1160px;
+  max-width: 1360px;
+  height: 100%;
   margin: auto; }
 
 .header {
@@ -77,12 +77,19 @@ hr {
   font-weight: 500; }
 
 .navbar {
-  flex-grow: 1;
-  margin: 44px 115px; }
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
+  margin: 0 105px;
+  background-color: #212538;
+  height: 125px;
+  z-index: 10; }
   .navbar__list {
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    height: 100%;
+    padding-left: 19px;
+    gap: 8px; }
   .navbar__letter {
     display: flex;
     justify-content: center;
@@ -98,3 +105,42 @@ hr {
       border: 1px solid #fff;
       width: 40px;
       height: 40px; }
+
+.content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.block-list {
+  position: relative;
+  width: min-content; }
+  .block-list__fake {
+    position: absolute;
+    top: -125px; }
+  .block-list__letter {
+    position: absolute;
+    top: 7px;
+    left: 15px;
+    font-size: 38px;
+    font-weight: 500; }
+  .block-list__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 52px; }
+  .block-list__devider {
+    width: 1130px;
+    margin: 57px auto;
+    border-top: 1px solid #8c8b8b; }
+
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 250px;
+  width: 524px;
+  background-color: #414755;
+  border-radius: 4px;
+  font-size: 36px;
+  font-weight: 500; }

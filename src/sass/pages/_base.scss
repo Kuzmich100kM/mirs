@@ -2,14 +2,9 @@ html {
     height: 100%;
 }
 
-hr {
-    border: none;
-    color: $gray;
-    height: 1px;
-}
-
 .container {
     background-color: $bg-color;
-    max-width: 1160px;
+    max-width: 1360px;
+    height: 100%;
     margin: auto;
 }

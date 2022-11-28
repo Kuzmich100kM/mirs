@@ -1,7 +1,18 @@
 import React from "react"
+import { useSelector } from "react-redux"
+
+import BlockList from "@components/BlockList"
 
 const Content = () => {
-  return <div className="content">Контент</div>
+  const { dataArr } = useSelector(state => state.content)
+
+  return (
+    <div className="content">
+      {dataArr.map(blocks => {
+        return <BlockList key={blocks.letter} blockList={blocks} />
+      })}
+    </div>
+  )
 }
 
 export default Content
