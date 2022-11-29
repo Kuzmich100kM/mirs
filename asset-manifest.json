@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/mirs/static/css/main.fca95f5d.css",
-    "main.js": "/mirs/static/js/main.10e7740a.js",
+    "main.js": "/mirs/static/js/main.ecefe300.js",
     "index.html": "/mirs/index.html",
     "main.fca95f5d.css.map": "/mirs/static/css/main.fca95f5d.css.map",
-    "main.10e7740a.js.map": "/mirs/static/js/main.10e7740a.js.map"
+    "main.ecefe300.js.map": "/mirs/static/js/main.ecefe300.js.map"
   },
   "entrypoints": [
     "static/css/main.fca95f5d.css",
-    "static/js/main.10e7740a.js"
+    "static/js/main.ecefe300.js"
   ]
 }
