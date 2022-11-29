@@ -27,8 +27,16 @@
         cursor: pointer;
 
         &.selected {
-            color: #fff;
-            border: 1px solid #fff;
+            color: $white;
+            border: 1px solid $white;
+            width: 40px;
+            height: 40px;
+        }
+
+        &.visible {
+            color: $dark;
+            background-color: $white;
+            border: 1px solid $white;
             width: 40px;
             height: 40px;
         }

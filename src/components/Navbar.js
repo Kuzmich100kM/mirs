@@ -2,7 +2,9 @@ import React from "react"
 import { useSelector } from "react-redux"
 
 const Navbar = () => {
-  const { lettersArr, dataArr } = useSelector(state => state.content)
+  const { lettersObj, dataArr } = useSelector(state => state.content)
+
+  const lettersArr = Object.keys(lettersObj)
 
   const letterList = lettersArr.map(letter => {
     let anchor = letter
@@ -14,10 +16,11 @@ const Navbar = () => {
       return !isNaN(el.letter)
     })
 
-    const cls = isSelected ? "navbar__letter selected" : "navbar__letter"
+    const cls1 = isSelected ? "selected" : ""
+    const cls2 = lettersObj[letter] ? "visible" : ""
 
     return (
-      <a className={cls} key={letter} href={`#${anchor}`}>
+      <a className={`navbar__letter ${cls1} ${cls2}`} key={letter} href={`#${anchor}`}>
         {letter}
       </a>
     )
