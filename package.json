@@ -1,6 +1,6 @@
 {
-  "homepage": "https://github.com/Kuzmich100kM/mirs/",
-  "name": "goods",
+  "homepage": "https://kuzmich100km.github.io/mirs",
+  "name": "mirs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
