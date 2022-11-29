@@ -3,9 +3,7 @@ import React from "react"
 const Header = () => {
   return (
     <div className="header">
-      <a href="/" alt="Home">
-        Test Work
-      </a>
+      <h1>Test Work</h1>
     </div>
   )
 }
