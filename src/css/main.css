@@ -99,6 +99,12 @@ html {
       border: 1px solid #fff;
       width: 40px;
       height: 40px; }
+    .navbar__letter.visible {
+      color: #202020;
+      background-color: #fff;
+      border: 1px solid #fff;
+      width: 40px;
+      height: 40px; }
     .navbar__letter:last-child {
       width: 40px; }
 

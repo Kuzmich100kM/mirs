@@ -38,6 +38,6 @@ const data = [
   },
 ]
 
-module.exports = {
-  getFakeData: () => data,
+export default function () {
+  return data
 }
