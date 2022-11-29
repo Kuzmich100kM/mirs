@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/Kuzmich100kM/mirs/static/css/main.fca95f5d.css",
-    "main.js": "/Kuzmich100kM/mirs/static/js/main.10e7740a.js",
-    "index.html": "/Kuzmich100kM/mirs/index.html",
-    "main.fca95f5d.css.map": "/Kuzmich100kM/mirs/static/css/main.fca95f5d.css.map",
-    "main.10e7740a.js.map": "/Kuzmich100kM/mirs/static/js/main.10e7740a.js.map"
+    "main.css": "/mirs/static/css/main.fca95f5d.css",
+    "main.js": "/mirs/static/js/main.10e7740a.js",
+    "index.html": "/mirs/index.html",
+    "main.fca95f5d.css.map": "/mirs/static/css/main.fca95f5d.css.map",
+    "main.10e7740a.js.map": "/mirs/static/js/main.10e7740a.js.map"
   },
   "entrypoints": [
     "static/css/main.fca95f5d.css",
